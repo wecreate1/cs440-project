@@ -1,1 +1,5 @@
+# pyenv files
 .python-version
+
+# mac files
+.DS_Store
