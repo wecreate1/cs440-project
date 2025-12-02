@@ -27,4 +27,4 @@ df['y_center'] /= df['image_height']
 df['height'] /= df['image_height']
 
 for name, group in df.groupby("image"):
-    group.to_csv((Path('GTSDB')/name).with_suffix('.txt'), sep=' ', columns=['ClassID', 'x_center', 'y_center', 'width', 'height'], header=False, index=False)
+    group[group['ClassID'] <= 8].to_csv((Path('GTSDB')/name).with_suffix('.txt'), sep=' ', columns=['ClassID', 'x_center', 'y_center', 'width', 'height'], header=False, index=False)

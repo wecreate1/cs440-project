@@ -1,8 +1,0 @@
-path: data
-train: raw/train.txt
-val: raw/test.txt
-names:
-  0: prohibitory
-  1: danger
-  2: mandatory
-  3: other

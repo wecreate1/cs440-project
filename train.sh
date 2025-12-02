@@ -1,2 +1,2 @@
 #/bin/sh
-yolo detect train data=dataset.yml
+yolo detect train data=GTSDB.yml
