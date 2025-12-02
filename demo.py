@@ -6,7 +6,6 @@ import cv2 as cv
 
 
 model = YOLO("runs/detect/train3/weights/best.pt")
-cap = cv.VideoCapture("/home/jimmy/Downloads/Dash Cam -  driving in Poland _ вождение в Польше _ Fahren in Polen-7Wdrr_VnLpU.mkv")
 
 false_positivess = [0] * 9
 false_negativess = [0] * 9
@@ -46,4 +45,4 @@ plt.plot(threshs, true_positivess, label='true positives')
 plt.plot(threshs, true_negativess, label='true negatives')
 plt.xlabel("confidence threshold")
 plt.legend(loc='upper right')
-plt.savefig("confidence")
+plt.savefig("confusion")
